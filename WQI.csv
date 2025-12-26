@@ -1,4 +1,4 @@
-Month,Year,Location,NH4+N,NO2-N,Temperature,pH,COD,DO,Coliform,WQI
+Month,Year,Location,NH4+_N,NO2-_N,Temperature,pH,COD,DO,Coliform,WQI
 1,2023,SG1,0.5,0.014,26.8,7.1,6,4.5,2100,19.90141464
 2,2023,SG1,0.02,0.017,28.8,6.8,18,3.5,1500,19.37670293
 3,2023,SG1,0.01,0.01,28.6,6.8,8,3.5,2800,18.39552848
