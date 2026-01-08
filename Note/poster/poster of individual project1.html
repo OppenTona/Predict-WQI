@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML-based WQI Poster</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+      .poster {
+        width: 900px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .header {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 36px;
+        color: #003366;
+      }
+      .authors {
+        font-size: 16px;
+        color: #555;
+      }
+      .section {
+        flex: 1 1 calc(33.333% - 10px);
+        min-width: 250px;
+        background: #f0f0f0;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      .section h2 {
+        font-size: 20px;
+        color: #003366;
+        margin-top: 0;
+      }
+      .wide-section {
+        flex: 1 1 100%;
+      }
+      .graph,
+      .diagram {
+        width: 100%;
+        height: 400px;
+        background: #ddd;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 150px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poster">
+      <div class="header">
+        <h1>Machine Learning-based Water Quality Index Prediction</h1>
+      </div>
+
+      <div class="section">
+        <ul>
+          <h2>Abstract</h2>
+          <li>
+            Water Quality Index (WQI) is essential for assessing 
+            aquatic health and human water safety.
+          </li>
+          <li>
+            This study aims to predict WQI in Quang Ninh province 
+            using machine learning while reducing measurement costs.
+          </li>
+          <li>
+            Five algorithms were compared,
+            a stacking model was built, 
+            and feature selection was applied before retraining.
+          </li>
+          <li>
+            The stacking model achieved high accuracy
+            and feature selection reduced inputs without compromising performance.
+          </li>
+        </ul>
+        <ul><h2>Introduction</h2>
+        <p>traditional WQI calculation: time-consuming and expensive</p>
+        <p>Make an AI model that less time consuming and expensive but performance better</p>
+        <p>Aim:
+          <ol>
+            <li>Dataset construction</li>
+            <li>
+              Compare the performance between algorithms
+            </li>
+            <li>
+              Make a stacking model that better than the others
+            </li>
+            <li>
+              Make a new way to choose feature importance
+            </li>
+          </ol>
+        </p></ul>
+      </div>
+      <div class="section">
+        <h2>Literature Review</h2>
+        <ol>
+          <li>
+            <strong>Challenges of traditional WQI</strong>
+            <ul>
+              <li>WQI combines chemical, physical, and biological traits.</li>
+              <li>
+                Classic models (Horton, NSFWQI, CCMEWQI) are slow, costly, and
+                subjective.
+              </li>
+              <li>Extreme values can be masked (eclipsing effect).</li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Data-driven approaches</strong>
+            <ul>
+              <li>
+                ML/AI capture hidden nonlinear relationships without mechanistic
+                rules.
+              </li>
+              <li>ANN handles multidimensional data but risks overfitting.</li>
+              <li>RF and XGBoost are accurate and robust to noise.</li>
+              <li>
+                LSTM and GRU capture long-term trends in time-series data.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Feature optimization & cost reduction</strong>
+            <ul>
+              <li>ML identifies key indicators using feature importance.</li>
+              <li>
+                Only 3–4 parameters (pH, DO, Turbidity, COD) predict WQI with
+                over 90% accuracy.
+              </li>
+              <li>
+                Fewer parameters reduce cost and enable IoT-based monitoring.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <div class="section wide-section">
+        <h2>Methodology</h2>
+        <div class="diagram"><img src="./flowchart_of_individual_project.png" style="max-width:100%; height:auto; display:block; margin:0 auto;"></div>
+        <p></p>
+      </div>
+
+      <div class="section wide-section">
+        <h2>Results</h2>
+        <div class="graph">Graph / Table</div>
+        <p>Key results and metrics...</p>
+      </div>
+
+      <div class="section">
+        <h2>Discussion</h2>
+        <p>Interpretation of results...</p>
+      </div>
+      <div class="section">
+        <h2>Conclusion</h2>
+        <p>Main takeaways...</p>
+      </div>
+      <div class="section">
+        <h2>Future Work</h2>
+        <p>Next steps for research...</p>
+      </div>
+    </div>
+  </body>
+</html>
