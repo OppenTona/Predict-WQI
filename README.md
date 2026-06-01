@@ -1,4 +1,4 @@
-**Abstract**
+# Abstract
 Machine learning has been extensively explored to decrease the number of parameters 
 required for Water Quality Index management, with the aim of lowering monitoring cost 
 and time. This study addresses several key gaps, including the absence of a standardized 
